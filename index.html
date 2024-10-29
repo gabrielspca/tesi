@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Cursos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Guia de Escolha de Cursos</h1>
+        <p class="lead text-center mb-4">Escolha o curso para saber mais:</p>
+        
+        <div class="row text-center mb-5">
+            <div class="col-md-4">
+                <button class="btn btn-primary w-100" onclick="showSection('csSection')">Ciência da Computação</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-success w-100" onclick="showSection('ceSection')">Engenharia de Computação</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-warning w-100" onclick="showSection('seSection')">Engenharia de Software</button>
+            </div>
+        </div>
+        
+        <hr class="my-5">
+
+        <!-- Seção Ciência da Computação -->
+        <div id="csSection" class="d-none">
+            <h2>Ciência da Computação</h2>
+            <p><strong>O que é Ciência da Computação?</strong></p>
+            <p>Ciência da Computação é o estudo dos princípios e fundamentos que guiam o funcionamento dos computadores e sistemas computacionais. Envolve a criação de algoritmos eficientes, o desenvolvimento de linguagens de programação e a exploração da inteligência artificial, segurança cibernética, entre outras áreas.</p>
+
+            <p><strong>Áreas de Estudo:</strong></p>
+            <ul>
+                <li>Algoritmos e Estruturas de Dados</li>
+                <li>Inteligência Artificial e Aprendizado de Máquina</li>
+                <li>Segurança da Informação</li>
+                <li>Computação Teórica</li>
+            </ul>
+
+            <p><strong>Habilidades Desenvolvidas:</strong></p>
+            <ul>
+                <li>Raciocínio lógico e matemático</li>
+                <li>Programação e desenvolvimento de software</li>
+                <li>Resolução de problemas complexos</li>
+            </ul>
+
+            <p><strong>Carreiras Possíveis:</strong></p>
+            <ul>
+                <li>Desenvolvedor de Software</li>
+                <li>Cientista de Dados</li>
+                <li>Pesquisador em Computação</li>
+            </ul>
+
+            <p><strong>Links Recomendados:</strong></p>
+            
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" target="_blank">Ciência da Computação (Wikipédia)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=rRixHV6hts0" target="_blank">Ciência da Computação: tudo sobre o curso (YouTube)</a></li>
+                <li><a href="https://roadmap.sh/computer-science" target="_blank">Ciência da Computação (Roadmap)</a></li>
+                <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank">Cursos relevantes (MIT OpenCourseWare)</a></li>
+            </ul>
+
+            <button class="btn btn-secondary mt-3" onclick="showSection('home')">Voltar</button>
+        </div>
+
+        <!-- Seção Engenharia de Computação -->
+        <div id="ceSection" class="d-none">
+            <h2>Engenharia de Computação</h2>
+            <p><strong>O que é Engenharia de Computação?</strong></p>
+            <p>Engenharia de Computação combina conhecimentos de hardware e software para projetar e criar sistemas que integram essas duas áreas. Desde a construção de microprocessadores até o desenvolvimento de sistemas embarcados, engenheiros de computação trabalham na interseção entre a eletrônica e a computação.</p>
+
+            <p><strong>Áreas de Estudo:</strong></p>
+            <ul>
+                <li>Arquitetura de Computadores</li>
+                <li>Sistemas Embarcados</li>
+                <li>Circuitos Digitais e Eletrônica</li>
+                <li>Redes de Computadores</li>
+            </ul>
+
+            <p><strong>Habilidades Desenvolvidas:</strong></p>
+            <ul>
+                <li>Projeto e implementação de hardware e software</li>
+                <li>Conhecimento em eletrônica e circuitos</li>
+                <li>Integração de sistemas</li>
+            </ul>
+
+            <p><strong>Carreiras Possíveis:</strong></p>
+            <ul>
+                <li>Engenheiro de Hardware</li>
+                <li>Desenvolvedor de Sistemas Embarcados</li>
+                <li>Arquiteto de Redes</li>
+            </ul>
+
+            <p><strong>Links Recomendados:</strong></p>
+
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Engenharia_de_computa%C3%A7%C3%A3o" target="_blank">Engenharia de Computação (Wikipédia)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=F8QhC-OyhsI" target="_blank">Tudo sobre Engenharia da Computação (YouTube)</a></li>
+                <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank">Cursos relevantes (MIT OpenCourseWare)</a></li>
+            </ul>
+
+            <button class="btn btn-secondary mt-3" onclick="showSection('home')">Voltar</button>
+        </div>
+
+        <!-- Seção Engenharia de Software -->
+        <div id="seSection" class="d-none">
+            <h2>Engenharia de Software</h2>
+            <p><strong>O que é Engenharia de Software?</strong></p>
+            <p>Engenharia de Software foca na criação, manutenção e gestão de sistemas de software em grande escala. O engenheiro de software não apenas escreve código, mas também projeta e supervisiona projetos complexos, garantindo a qualidade, funcionalidade e escalabilidade de um sistema.</p>
+
+            <p><strong>Áreas de Estudo:</strong></p>
+            <ul>
+                <li>Engenharia de Requisitos</li>
+                <li>Modelagem e Arquitetura de Software</li>
+                <li>Metodologias Ágeis</li>
+                <li>Qualidade de Software</li>
+            </ul>
+
+            <p><strong>Habilidades Desenvolvidas:</strong></p>
+            <ul>
+                <li>Gestão de projetos e times de desenvolvimento</li>
+                <li>Arquitetura de sistemas e planejamento a longo prazo</li>
+                <li>Programação orientada a objetivos</li>
+            </ul>
+
+            <p><strong>Carreiras Possíveis:</strong></p>
+            <ul>
+                <li>Engenheiro de Software</li>
+                <li>Arquiteto de Software</li>
+                <li>Gerente de Projetos de TI</li>
+            </ul>
+
+            <p><strong>Links Recomendados:</strong></p>
+            
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Engenharia_de_software" target="_blank">Engenharia de Software (Wikipédia)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=gFXHqTjgqAQ" target="_blank">Tudo sobre Engenharia de Software (YouTube)</a></li>
+                <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank">Cursos relevantes (MIT OpenCourseWare)</a></li>
+            </ul>
+
+            <button class="btn btn-secondary mt-3" onclick="showSection('home')">Voltar</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
